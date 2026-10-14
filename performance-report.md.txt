@@ -1,0 +1,43 @@
+# OrangeHRM Performance Test Report
+
+## 1. Objective
+To perform a basic HTTP load test on the OrangeHRM demo login page using Apache JMeter 5.6.3.
+
+## 2. Test Environment
+- **Tool:** Apache JMeter 5.6.3
+- **Target URL:** https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+- **HTTP method:** GET
+- **Virtual users:** 5
+- **Ramp-up period:** 10 seconds
+- **Loop count:** 3
+- **Expected total requests:** 15
+
+## 3. Test Results
+
+| Metric | Observed result |
+|---|---:|
+| Total requests | 15 |
+| Average response time | 951 ms |
+| Minimum response time | 327 ms |
+| Maximum response time | 3,834 ms |
+| Error rate | 0% |
+| Throughput | 1.1 requests/second |
+| APDEX | 0.733 |
+
+The JMeter dashboard used a tolerance threshold of 500 ms and a frustration threshold of 1.5 seconds for the APDEX calculation.
+
+## 4. Conclusion
+All 15 requests completed without reported errors in this test run. The average observed response time was 951 ms, and the maximum was 3,834 ms.
+
+## 5. Limitations
+- This was a small test with five virtual users and 15 requests.
+- Only the login page GET request was tested; no login transaction or authenticated workflow was tested.
+- Results may vary with network conditions and the shared demo server.
+- No formal performance acceptance criteria were defined.
+- This test does not establish production capacity or behaviour under high concurrent load.
+
+## 6. Artifacts
+- JMeter test plan: `OrangeHRM Smoke performance.jmx`
+- Raw results: `jmeter-load-results.jtl`
+- HTML dashboard: `jmeter-load-report/index.html`
+- GUI summary results: saved CSV summary files

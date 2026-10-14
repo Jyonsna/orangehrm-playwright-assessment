@@ -1,0 +1,3 @@
+Label,# Samples,Average,Min,Max,Std. Dev.,Error %,Throughput,Received KB/sec,Sent KB/sec,Avg. Bytes
+OrangeHRM Login Page,3,684,387,1265,410.63,0.000%,1.46056,6.41,0.23,4495.3
+TOTAL,3,684,387,1265,410.63,0.000%,1.46056,6.41,0.23,4495.3
