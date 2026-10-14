@@ -1,0 +1,16 @@
+node_modules/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+playwright/.auth/
+evidence/report.tmp/
+*storageState*.json
+.env
+.env.*
+!.env.example
+*.zip
+*.log
+.vscode/
+.idea/
+.DS_Store

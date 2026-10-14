@@ -1,0 +1,35 @@
+{
+  "name": "orangehrm-playwright",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript end-to-end test for the OrangeHRM employee lifecycle",
+  "scripts": {
+    "install:browsers": "playwright install --with-deps chromium",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:evidence": "playwright test && npm run evidence",
+    "evidence": "node scripts/copy-evidence.mjs",
+    "report": "playwright show-report",
+    "report:evidence": "playwright show-report evidence/report",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "@playwright/test": "1.64.0",
+    "@types/node": "24.19.2",
+    "eslint": "9.39.5",
+    "eslint-plugin-playwright": "2.12.1",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.2"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=24 <25"
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "firstName": "QA",
+    "lastName": "Automation",
+    "employeeIdPrefix": "QA",
+    "jobTitlePreferences": ["QA Engineer", "Software Engineer"],
+    "employmentStatusPreferences": ["Full-Time Contract", "Full-Time Permanent"],
+    "imagePath": "test-assets/profile-picture.jpg"
+  }
+]
